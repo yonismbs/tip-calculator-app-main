@@ -23,33 +23,41 @@
   <main>
     <form class="main-container" method="get" action="">
       <div class="left-side">
-        <label for="bill">Bill</label>
-        <input type="text" name="bill"/>
-
-        <span>Select Tip %</span>
-        <div class="tip-container-1">
-          <input type="button" value="5%"/>
-          <input type="button" value="10%"/>
-          <input type="button" value="15%"/>
-        </div>
-        <div class="tip-container-2">
-          <input type="button" value="25%"/>
-          <input type="button" value="50%"/>
-          <input type="text" value="Custom"/>
+        <div>
+          <label for="bill">Bill</label>
+          <input type="text" name="bill"/>
         </div>
         
-        <label for="nb_people">Number of People</label>
-        <input type="text" name="nb_people"/>
+        <div>
+          <span>Select Tip %</span>
+          <div class="tip-container-1">
+            <input type="button" value="5%"/>
+            <input type="button" value="10%"/>
+            <input type="button" value="15%"/>
+          </div>
+          <div class="tip-container-2">
+            <input type="button" value="25%"/>
+            <input type="button" value="50%"/>
+            <input type="text" value="Custom"/>
+          </div>
+        </div>
+
+        <div>
+          <label for="nb_people">Number of People</label>
+          <input type="text" name="nb_people"/>
+        </div>
       </div>
 
       <div class="right-side">
-        <div class="amount-container">
-          <span class="tip-label">Tip Amount<span>/ person</span></span>
-          <span class="tip-value">$4.27</span>
-        </div>
-        <div class="total-container">
-          <span class="total-label">Total<span>/ person</span></span>
-          <span class="total-value">$32.79</span>
+        <div class="result-container">
+          <div class="amount-container">
+            <span class="tip-label">Tip Amount<span>/ person</span></span>
+            <span class="tip-value">$4.27</span>
+          </div>
+          <div class="total-container">
+            <span class="total-label">Total<span>/ person</span></span>
+            <span class="total-value">$32.79</span>
+          </div>
         </div>
 
         <input type="reset" value="Reset"/>

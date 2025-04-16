@@ -1,27 +1,57 @@
+/* Variables */
+
+:root {
+    --main-padding: 1.5rem;
+    --gap : 2rem;
+    --radius : 5px;
+    --secondary: #2c3e50;
+    --radius: 15px;
+  }
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    padding-top: 10%;
+}
+
 /* Header */
 
 header {
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
 }
+
+form label{
+    display: block;
+}
+
+input {
+    font-size: 24px;
+  }
 
 /* Main Container */
 
 .main-container {
     display: flex;
     flex-direction: row;
+    max-width: 700px;
     margin: 0 auto;
+    padding: var(--main-padding);
     justify-content: center;
-    gap : 1rem;
-    background-color: red;
+    gap : var(--gap);
+    background-color: hsl(0, 100%, 100%);
+    border-radius: var(--radius);
 }
 
 /* Left Side */
 
 .left-side {
     display: flex;
+    flex : 1 0 0;
+    gap : var(--gap);
     flex-direction: column;
-    background-color: green;
+    justify-content: space-around;
+    
 }
 
 /* Right side */
@@ -29,5 +59,15 @@ header {
 .right-side {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    flex : 1 0 0;
+    padding: var(--main-padding);
+    border-radius: var(--radius);
+    background-color: hsl(183, 100%, 15%);
+    justify-content: space-around;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
