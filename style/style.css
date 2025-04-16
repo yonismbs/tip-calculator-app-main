@@ -1,0 +1,33 @@
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container */
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    gap : 1rem;
+    background-color: red;
+}
+
+/* Left Side */
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+}
+
+/* Right side */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
