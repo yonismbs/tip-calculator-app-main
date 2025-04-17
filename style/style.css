@@ -1,73 +1,81 @@
-/* Variables */
-
+/* =============================
+Variables globales
+============================= */
 :root {
-    --main-padding: 1.5rem;
-    --gap : 2rem;
-    --radius : 5px;
-    --secondary: #2c3e50;
+    --right-padding: 2rem;
+    --gap: 2rem;
     --radius: 15px;
-  }
+}
 
+/* =============================
+    Base du body
+============================= */
 body {
-    background-color: hsl(185, 41%, 84%);
-    padding-top: 10%;
-}
-
-/* Header */
-
-header {
     display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono';
+    font-size: 15px;
+    padding-top: 10%;
+    gap: 5rem;
 }
 
-form label{
-    display: block;
+main {
+    background-color: hsl(0, 100%, 100%);
+    border-radius: var(--radius);
+    padding: 3%;
 }
 
 input {
+    width: 100%;
+    border: none;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    background-color: hsl(189, 47%, 97%);;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    text-align: right;
     font-size: 24px;
-  }
-
-/* Main Container */
-
-.main-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: var(--main-padding);
-    justify-content: center;
-    gap : var(--gap);
-    background-color: hsl(0, 100%, 100%);
-    border-radius: var(--radius);
 }
 
-/* Left Side */
+input::placeholder {
+    text-align: center;
+}
+
+label, span {
+    display: block;
+}
+
+.form-container {
+    display: flex;
+}
 
 .left-side {
     display: flex;
-    flex : 1 0 0;
-    gap : var(--gap);
     flex-direction: column;
-    justify-content: space-around;
-    
+    flex-grow: 1;
+    gap: var(--gap);
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(186, 14%, 43%);
 }
 
-/* Right side */
-
-.right-side {
-    display: flex;
-    flex-direction: column;
-    flex : 1 0 0;
-    padding: var(--main-padding);
-    border-radius: var(--radius);
-    background-color: hsl(183, 100%, 15%);
-    justify-content: space-around;
-}
-
-.result-container {
-    display: flex;
-    flex-direction: column;
+.tip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3em 3em;
     gap: 1rem;
 }
+
+.tip-container input[type="button"] {
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+    color: hsl(0, 100%, 100%);
+}
+
+.tip-container input[type="text"] {
+    background-color: hsl(189, 47%, 97%);
+    text-align: right;
+    color: hsl(186, 14%, 43%);
+}
+

@@ -4,16 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style/style.css">
 
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
@@ -21,7 +17,7 @@
   </header>
 
   <main>
-    <form class="main-container" method="get" action="">
+    <form class="form-container" method="get" action="">
       <div class="left-side">
         <div>
           <label for="bill">Bill</label>
@@ -30,15 +26,13 @@
         
         <div>
           <span>Select Tip %</span>
-          <div class="tip-container-1">
-            <input type="button" value="5%"/>
-            <input type="button" value="10%"/>
-            <input type="button" value="15%"/>
-          </div>
-          <div class="tip-container-2">
-            <input type="button" value="25%"/>
-            <input type="button" value="50%"/>
-            <input type="text" value="Custom"/>
+          <div class="tip-container">
+              <input type="button" value="5%"/>
+              <input type="button" value="10%"/>
+              <input type="button" value="15%"/>
+              <input type="button" value="25%"/>
+              <input type="button" value="50%"/>
+              <input type="text" placeholder="Custom"/>
           </div>
         </div>
 
@@ -50,17 +44,17 @@
 
       <div class="right-side">
         <div class="result-container">
-          <div class="amount-container">
-            <span class="tip-label">Tip Amount<span>/ person</span></span>
-            <span class="tip-value">$4.27</span>
+          <div class="sub-result-container">
+            <span class="span-container">Tip Amount<span class="proportion">/ person</span></span>
+            <span class="value-container">$4.27</span>
           </div>
-          <div class="total-container">
-            <span class="total-label">Total<span>/ person</span></span>
-            <span class="total-value">$32.79</span>
+          <div class="sub-result-container">
+            <span class="span-container">Total<span class="proportion">/ person</span></span>
+            <span class="value-container">$32.79</span>
           </div>
         </div>
 
-        <input type="reset" value="Reset"/>
+        <input type="reset" value="RESET"/>
       </div>
     </form>
   </main>
