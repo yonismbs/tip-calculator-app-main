@@ -1,17 +1,17 @@
 /* =============================
-Variables globales
-============================= */
+* Variables globales
+* ============================= */
 :root {
     --right-padding: 2rem;
     --gap: 2rem;
-    --gap-label-input : 0.25rem;
+    --gap-label-input: 0.25rem;
     --radius: 15px;
-    --icon-padding : 15px;
+    --icon-padding: 15px;
 }
 
 /* =============================
-    Base du body
-============================= */
+* Base Elements
+* ============================= */
 body {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,6 @@ main {
     background-color: hsl(0, 100%, 100%);
     border-radius: var(--radius);
     padding: 3%;
-    height: 700
 }
 
 input {
@@ -36,11 +35,12 @@ input {
     border: none;
     font-family: 'Space Mono';
     font-weight: 700;
-    background-color: hsl(189, 47%, 97%);;
+    background-color: hsl(189, 47%, 97%);
     color: hsl(183, 100%, 15%);
     border-radius: 5px;
     text-align: right;
     font-size: 24px;
+    outline: none;
 }
 
 input::placeholder {
@@ -52,11 +52,17 @@ label, span {
     display: block;
 }
 
+/* =============================
+* Layout & Containers
+* ============================= */
 .form-container {
     display: flex;
     gap: 1.5rem;
 }
 
+/* =============================
+* Left Side Styles
+* ============================= */
 .left-side {
     display: flex;
     flex-direction: column;
@@ -68,6 +74,17 @@ label, span {
     padding: 1rem;
 }
 
+.label-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-label-input);
+}
+
+.label-input-container input {
+    padding-right: 1rem;
+}
+
+/* Tip Selection */
 .tip-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -86,15 +103,9 @@ label, span {
     background-color: hsl(189, 47%, 97%);
     text-align: center;
     color: hsl(186, 14%, 43%);
-
 }
 
-input[name='bill'] {
-    background-image: url("/images/icon-dollar.svg");
-    background-position: var(--icon-padding) center;
-    background-repeat: no-repeat;
-}
-
+/* Input Icons */
 input[name='bill'] {
     background-image: url("/images/icon-dollar.svg");
     background-position: var(--icon-padding) center;
@@ -107,14 +118,9 @@ input[name='nb_people'] {
     background-repeat: no-repeat;
 }
 
-.label-input-container {
-    display: flex;
-    flex-direction: column;
-    gap:var(--gap-label-input);
-}
-
-/* Right Side */
-
+/* =============================
+* Right Side Styles
+* ============================= */
 .right-side {
     display: flex;
     flex-direction: column;
@@ -151,5 +157,5 @@ input[name='nb_people'] {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 1000 !important;
-    padding: 0.5rem ;
+    padding: 0.5rem;
 }
