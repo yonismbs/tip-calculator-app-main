@@ -36,8 +36,8 @@ function computeResult() {
   const tipPerPerson = (bill * tipPercentage) / people;
   const totalPerPerson = (bill * (1 + tipPercentage)) / people;
 
-  tipAmountDisplay.textContent = `$${tipPerPerson.toFixed(2)}`;
-  totalDisplay.textContent = `$${totalPerPerson.toFixed(2)}`;
+  tipAmountDisplay.textContent = "$" + tipPerPerson.toFixed(2);
+  totalDisplay.textContent = "$" + totalPerPerson.toFixed(2);
 }
 
 // Événements pour les boutons prédéfinis
@@ -64,7 +64,7 @@ customTipInput.addEventListener("input", () => {
   input.addEventListener("input", computeResult)
 );
 
-// Gestion du button reset
+// Gestion du button
 resetButton.addEventListener("click", () => {
     clearActiveTips();
 });
