@@ -18,7 +18,7 @@
       <div class="left-side">
         <div class="label-input-container">
           <label for="bill">Bill</label>
-          <input id="bill" type="number" name="bill"/>
+          <input id="bill" type="number" name="bill" required min="0.01"/>
         </div>
         <div>
           <span>Select Tip %</span>
@@ -28,26 +28,26 @@
             <input type="button" value="15%"/>
             <input type="button" value="25%"/>
             <input type="button" value="50%"/>
-            <input type="number" placeholder="Custom"/>
+            <input type="number" placeholder="Custom" min="0"/>
           </div>
         </div>
         <div class="label-input-container">
           <label for="nb_people">Number of People</label>
-          <input id="nb_people" type="number" name="nb_people"/>
+          <input id="nb_people" type="number" name="nb_people" required min="1"/>
         </div>
       </div>
       <div class="right-side">
         <div class="result-container">
           <div class="sub-result-container">
             <span class="span-container">Tip Amount<span class="proportion">/ person</span></span>
-            <span id="tip-amount" class="value-container">$4.27</span>
+            <span id="tip-amount" class="value-container">$0.00</span>
           </div>
           <div class="sub-result-container">
             <span class="span-container">Total<span class="proportion">/ person</span></span>
-            <span id="total-value" class="value-container">$32.79</span>
+            <span id="total-value" class="value-container">$0.00</span>
           </div>
         </div>
-        <input type="reset" value="RESET"/>
+        <input id="reset" type="reset" value="RESET"/>
       </div>
     </form>
   </main>
