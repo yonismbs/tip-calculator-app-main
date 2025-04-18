@@ -82,6 +82,7 @@ label, span {
 
 .label-input-container input {
     padding-right: 1rem;
+    height: 3rem;
 }
 
 /* Tip Selection */
@@ -99,10 +100,9 @@ label, span {
     color: hsl(0, 100%, 100%);
 }
 
-.tip-container input[type="text"] {
+.tip-container input[type="number"] {
     background-color: hsl(189, 47%, 97%);
     text-align: center;
-    color: hsl(186, 14%, 43%);
 }
 
 /* Input Icons */
@@ -165,4 +165,20 @@ input[name='nb_people'] {
     font-size: 1.25rem;
     font-weight: 1000 !important;
     padding: 0.5rem;
+}
+
+.tip-container input[type="button"].active {
+    background-color: hsl(172, 67%, 45%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
