@@ -3,7 +3,7 @@
 * ============================= */
 :root {
     --right-padding: 2rem;
-    --gap: 2rem;
+    --gap: 2.5rem;
     --gap-label-input: 0.25rem;
     --radius: 15px;
     --icon-padding: 15px;
@@ -130,6 +130,13 @@ input[name='nb_people'] {
     background-color: hsl(183, 100%, 15%);
     border-radius: var(--radius);
     padding: 2.5rem;
+    gap: 5rem;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .sub-result-container {
